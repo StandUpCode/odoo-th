@@ -1,0 +1,3 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['docker build',' --build-arg',' VERSION=16.0 ', '-t', 'gcr.io/standupcodeservices/odoo:16.0', '.']
