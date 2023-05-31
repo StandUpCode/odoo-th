@@ -3,7 +3,7 @@ ARG ODOO_IMAGE=odoo:${VERSION}
 FROM ${ODOO_IMAGE}
 ARG VERSION
 ARG MOD_VERSION=${ODOO_VERSION}
-LABEL maintainer="Poonlap V. <poonlap@tanabutr.co.th>"
+LABEL maintainer="Pattanan N. <poonlap@standupcode.tech>"
 
 USER root
     

@@ -1,3 +1,13 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build',' --build-arg',' VERSION=16.0 ', '-t', 'gcr.io/standupcodeservices/odoo:16.0', '.']
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "gcr.io/standupcodeservices/odoo:16.0",
+        ".",
+        "--build-arg",
+        "VERSION=16.0",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/standupcodeservices/odoo:16.0"]
